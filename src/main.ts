@@ -19,11 +19,7 @@ export interface ApiResponse {
 }
 
 const key = import.meta.env.VITE_LISTEN_API_KEY;
-console.log("KEY HERE", key);
-
-console.log("data here!", mockData);
 const data: ApiResponse = mockData;
-console.log("Date Here!!!", data.podcasts);
 data.podcasts[0]
 
 //* fetchPodcasts(key); *//
@@ -107,7 +103,7 @@ if (appElement) {
             if (selectedPodcast) {
 
                 const mockEpisodes = [1, 2, 3].map(num => `
-                    <div class="episode-item" style="padding: 15px; border-bottom: 1px solid var(--border); text-align: left; background: var(--code-bg); margin-bottom: 10px; border-radius: 6px;">
+                    <div class="episode-item" data-audio="https://scummbar.com/mi2/MI1-CD/01%20-%20Opening%20Themes%20-%20Introduction.mp3" style="padding: 15px; border-bottom: 1px solid var(--border); text-align: left; background: var(--code-bg); margin-bottom: 10px; border-radius: 6px;">
                         <h4 style="margin: 0 0 5px 0; color: var(--text-h);">Episode #${num} of ${selectedPodcast.title}</h4>
                         <p style="font-size: 14px; color: var(--text);">Published: July ${10 + num}, 2026 | Duration: 45:0${num}</p>
                     </div>
@@ -138,6 +134,16 @@ if (appElement) {
                         renderApp();
                     });
                 }
+                const episodes = document.querySelectorAll('.episode-item');
+                episodes.forEach(episode => {
+                    episode.addEventListener('click', () => {
+                        const audioUrl = episode.getAttribute('data-audio');
+                        if (audioUrl) {
+                            playPodcast(audioUrl);
+                        }
+
+                    });
+                });
             }
         }
     };
