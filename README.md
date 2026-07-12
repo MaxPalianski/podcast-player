@@ -4,7 +4,7 @@ Podcast Player | MaxPalianski
 * **Deploy Preview Podcast Player:**[https://deploy-preview-33--js-30-widget-gallery.netlify.app/students/maxpalianski/js-clock/]
 
 
-## 🕑 Widget 1: JS Clock
+## ⏯️ Podcast Player:
 ### 📝 Описание
 Кастомное SPA-приложение для поиска и прослушивания подкастов.
 ### 📊 Чек-лист
