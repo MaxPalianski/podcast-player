@@ -1,7 +1,7 @@
 Podcast Player | MaxPalianski
 
 ### 🔗 Links
-* **Deploy Preview Podcast Player:**[https://deploy-preview-33--js-30-widget-gallery.netlify.app/students/maxpalianski/js-clock/]
+* **Deploy Preview Podcast Player:**[https://maxpalianski.github.io/podcast-player/]
 
 
 ## ⏯️ Podcast Player:
