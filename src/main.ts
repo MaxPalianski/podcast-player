@@ -1,6 +1,6 @@
 import './style.css';
 import { playPodcast } from "./player.ts";
-import { fetchPodcasts } from "./api/podcast-index";
+// import { fetchPodcasts } from "./api/podcast-index";
 import mockData from "./mock-podcasts.json";
 
 export interface Podcast {
@@ -18,11 +18,11 @@ export interface ApiResponse {
     podcasts: Podcast[];
 }
 
-const key = import.meta.env.VITE_LISTEN_API_KEY;
+// const key = import.meta.env.VITE_LISTEN_API_KEY;
 const data: ApiResponse = mockData;
 data.podcasts[0]
 
-//* fetchPodcasts(key); *//
+// fetchPodcasts(key);
 
 
 
