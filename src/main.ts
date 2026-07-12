@@ -1,4 +1,5 @@
 import './style.css';
+import { playPodcast } from "./player.ts";
 import { fetchPodcasts } from "./api/podcast-index";
 import mockData from "./mock-podcasts.json";
 
