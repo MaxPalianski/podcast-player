@@ -8,6 +8,18 @@
   </head>
   <body>
     <div id="app"></div>
+    <div class="player" id="player">
+      <div class="player-container">
+        <button class="btn-back">⏪</button>
+        <button class="btn-play-pause">▶️</button>
+        <button class="btn-forward">⏩</button>
+        <span class="current-time">0:00</span>
+        <input type="range" class="progress-bar" value="0">
+        <span class="duration-time">0:00</span>
+        <input type="range" class="volume-bar" min="0" max="100" value="50">
+        <span class="volume-percentage">50%</span>
+      </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

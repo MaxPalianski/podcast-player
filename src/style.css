@@ -304,6 +304,7 @@ code {
   box-sizing: border-box;
 }
 .podcast-card {
+  display: grid;
   background: var(--code-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -337,4 +338,26 @@ code {
   margin: 0;
   font-size: 14px;
   color: var(--text);
+}
+/* player */
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 0;
+  background: var(--code-bg);
+  border-top: 1px solid var(--border);
+}
+.player-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  max-width: 1126px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.progress-bar {
+  flex-grow: 1;
 }

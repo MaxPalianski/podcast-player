@@ -1,3 +1,4 @@
+import './style.css';
 import { fetchPodcasts } from "./api/podcast-index";
 import mockData from "./mock-podcasts.json";
 
